@@ -2,6 +2,6 @@
 // If SUPABASE_URL is empty, the site runs in demo/local mode using browser storage.
 // To make updates visible to EVERY visitor, follow SETUP.md and add your Supabase values.
 window.CBL_CONFIG = {
-  SUPABASE_URL: "",
-  SUPABASE_ANON_KEY: ""
+  SUPABASE_URL: "https://zwloxhvrqigcgnlasmcn.supabase.co/rest/v1/",
+  SUPABASE_ANON_KEY: "sb_publishable_0Bq-8bd4xGM_ddrL7uorBA_6LjAnBlw"
 };
