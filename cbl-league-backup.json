@@ -1,0 +1,200 @@
+{
+  "league": {
+    "name": "Cypress Basketball League",
+    "season": "2026 Season"
+  },
+  "teams": [
+    {
+      "id": "cypress",
+      "name": "Cypress",
+      "short": "CYP",
+      "city": "Cypress",
+      "logo": "assets/logo.png"
+    },
+    {
+      "id": "falcons",
+      "name": "Falcons",
+      "short": "FAL",
+      "city": "Northside",
+      "logo": ""
+    },
+    {
+      "id": "warriors",
+      "name": "Warriors",
+      "short": "WAR",
+      "city": "Eastside",
+      "logo": ""
+    },
+    {
+      "id": "tigers",
+      "name": "Tigers",
+      "short": "TIG",
+      "city": "Westside",
+      "logo": ""
+    },
+    {
+      "id": "lions",
+      "name": "Lions",
+      "short": "LIO",
+      "city": "Southside",
+      "logo": ""
+    },
+    {
+      "id": "hawks",
+      "name": "Hawks",
+      "short": "HAW",
+      "city": "Central",
+      "logo": ""
+    },
+    {
+      "id": "knights",
+      "name": "Knights",
+      "short": "KNI",
+      "city": "Riverside",
+      "logo": ""
+    },
+    {
+      "id": "storm",
+      "name": "Storm",
+      "short": "STM",
+      "city": "Lakeside",
+      "logo": ""
+    }
+  ],
+  "games": [
+    {
+      "id": "g1",
+      "date": "2026-09-20",
+      "time": "18:00",
+      "home": "cypress",
+      "away": "falcons",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "upcoming",
+      "round": "Regular Season"
+    },
+    {
+      "id": "g2",
+      "date": "2026-09-21",
+      "time": "19:00",
+      "home": "warriors",
+      "away": "tigers",
+      "homeScore": 72,
+      "awayScore": 68,
+      "status": "final",
+      "round": "Regular Season"
+    },
+    {
+      "id": "g3",
+      "date": "2026-09-22",
+      "time": "18:30",
+      "home": "lions",
+      "away": "hawks",
+      "homeScore": 61,
+      "awayScore": 66,
+      "status": "final",
+      "round": "Regular Season"
+    },
+    {
+      "id": "g4",
+      "date": "2026-09-23",
+      "time": "19:00",
+      "home": "knights",
+      "away": "storm",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "upcoming",
+      "round": "Regular Season"
+    },
+    {
+      "id": "g5",
+      "date": "2026-09-25",
+      "time": "18:00",
+      "home": "cypress",
+      "away": "warriors",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "upcoming",
+      "round": "Regular Season"
+    }
+  ],
+  "bracket": [
+    {
+      "round": "Quarterfinals",
+      "games": [
+        {
+          "home": "cypress",
+          "away": "storm",
+          "homeScore": "",
+          "awayScore": "",
+          "winner": ""
+        },
+        {
+          "home": "falcons",
+          "away": "knights",
+          "homeScore": "",
+          "awayScore": "",
+          "winner": ""
+        },
+        {
+          "home": "warriors",
+          "away": "hawks",
+          "homeScore": "",
+          "awayScore": "",
+          "winner": ""
+        },
+        {
+          "home": "tigers",
+          "away": "lions",
+          "homeScore": "",
+          "awayScore": "",
+          "winner": ""
+        }
+      ]
+    },
+    {
+      "round": "Semifinals",
+      "games": [
+        {
+          "home": "Winner QF1",
+          "away": "Winner QF2",
+          "homeScore": "",
+          "awayScore": "",
+          "winner": ""
+        },
+        {
+          "home": "Winner QF3",
+          "away": "Winner QF4",
+          "homeScore": "",
+          "awayScore": "",
+          "winner": ""
+        }
+      ]
+    },
+    {
+      "round": "Final",
+      "games": [
+        {
+          "home": "Winner SF1",
+          "away": "Winner SF2",
+          "homeScore": "",
+          "awayScore": "",
+          "winner": ""
+        }
+      ]
+    },
+    {
+      "round": "Champion",
+      "games": [
+        {
+          "home": "TBD",
+          "away": "TBD",
+          "homeScore": "",
+          "awayScore": "",
+          "winner": ""
+        }
+      ]
+    }
+  ],
+  "updatedAt": ""
+}

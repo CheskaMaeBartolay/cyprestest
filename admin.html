@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CBL Admin</title><link rel="icon" href="assets/logo.png"><link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<header><div class="wrap nav"><a href="index.html" class="brand"><img src="assets/logo.png"><div><b>CYPRESS</b><span>LEAGUE ADMIN</span></div></a><a href="index.html" class="back">View website ↗</a></div></header>
+<main class="wrap">
+  <div id="login" class="panel login-panel">
+    <p class="eyebrow">CONTROL PANEL</p><h1>League Admin</h1><p>Sign in with your Supabase admin account to update the public league site.</p>
+    <input id="email" type="email" placeholder="Admin email"><input id="password" type="password" placeholder="Password">
+    <button id="login-btn">Sign in</button><div id="login-msg" class="msg"></div>
+    <p class="hint">If Supabase is not configured, local/demo mode is available for testing, but changes will only be stored in this browser.</p>
+  </div>
+  <div id="dashboard" hidden>
+    <div class="dash-head"><div><p class="eyebrow">CONTROL PANEL</p><h1>Update the league</h1><p id="account"></p></div><div class="actions"><button id="save-all">Save changes</button><button id="logout" class="secondary">Log out</button></div></div>
+    <div id="save-msg" class="msg"></div>
+    <section class="panel"><div class="panel-head"><h2>Teams</h2><button class="secondary" id="add-team">+ Add team</button></div><div id="teams-editor"></div></section>
+    <section class="panel"><div class="panel-head"><h2>Games & results</h2><button class="secondary" id="add-game">+ Add game</button></div><div id="games-editor"></div></section>
+    <section class="panel"><div class="panel-head"><h2>Playoff bracket</h2><button class="secondary" id="reset-bracket">Reset bracket template</button></div><div id="bracket-editor"></div></section>
+    <section class="panel tools"><div><h2>Backup</h2><p>Download a JSON backup before major edits, or restore one later.</p></div><div class="actions"><button id="export-json" class="secondary">Export JSON</button><label class="file-btn">Import JSON<input id="import-json" type="file" accept=".json" hidden></label></div></section>
+  </div>
+</main>
+<script src="config.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="admin.js"></script>
+</body>
+</html>

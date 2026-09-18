@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cypress Basketball League</title>
+  <meta name="description" content="Cypress Basketball League — teams, standings, games, results and playoff bracket.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-strip"></div>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Cypress Basketball League home">
+        <img src="assets/logo.png" alt="Cypress Basketball League logo">
+        <div>
+          <strong>CYPRESS</strong>
+          <span>BASKETBALL LEAGUE</span>
+        </div>
+      </a>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#teams">Teams</a>
+        <a href="#standings">Standings</a>
+        <a href="#games">Games</a>
+        <a href="#bracket">Bracket</a>
+      </nav>
+      <a class="admin-link" href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">CYPRESS BASKETBALL LEAGUE</p>
+          <h1>Every game.<br><span>Every result.</span></h1>
+          <p class="hero-copy">Follow the league in one place — teams, live status, standings, recent results and the playoff bracket.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#standings">View standings</a>
+            <a class="btn btn-outline" href="#bracket">View bracket</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="court-lines"></div>
+          <div class="score-label">LEAGUE BOARD</div>
+          <div id="hero-feature" class="hero-feature"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-bar">
+      <div class="container stats">
+        <div><span id="stat-teams">0</span><small>Teams</small></div>
+        <div><span id="stat-games">0</span><small>Games</small></div>
+        <div><span id="stat-played">0</span><small>Completed</small></div>
+        <div><span id="stat-upcoming">0</span><small>Upcoming</small></div>
+      </div>
+    </section>
+
+    <section id="games" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div><p class="eyebrow">SCHEDULE & RESULTS</p><h2>Latest games</h2></div>
+          <select id="game-filter" class="select"><option value="all">All games</option><option value="upcoming">Upcoming</option><option value="live">Live</option><option value="final">Final</option></select>
+        </div>
+        <div id="games-list" class="games-list"></div>
+      </div>
+    </section>
+
+    <section id="standings" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div><p class="eyebrow">LEAGUE TABLE</p><h2>Standings</h2></div>
+          <div class="search-wrap"><input id="team-search" type="search" placeholder="Search team..."></div>
+        </div>
+        <div class="table-wrap">
+          <table class="standings-table">
+            <thead><tr><th>#</th><th>Team</th><th>W</th><th>L</th><th>PF</th><th>PA</th><th>DIFF</th><th>WIN%</th></tr></thead>
+            <tbody id="standings-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="teams" class="section">
+      <div class="container">
+        <div class="section-head"><div><p class="eyebrow">LEAGUE CLUBS</p><h2>Teams</h2></div></div>
+        <div id="teams-grid" class="teams-grid"></div>
+      </div>
+    </section>
+
+    <section id="bracket" class="section section-alt">
+      <div class="container">
+        <div class="section-head"><div><p class="eyebrow">POSTSEASON</p><h2>Playoff bracket</h2></div><span class="updated" id="updated-at"></span></div>
+        <div id="bracket-board" class="bracket-board"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="brand footer-brand"><img src="assets/logo.png" alt=""><div><strong>CYPRESS</strong><span>BASKETBALL LEAGUE</span></div></div>
+      <p>Official league information • <span id="footer-year"></span></p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+</body>
+</html>
